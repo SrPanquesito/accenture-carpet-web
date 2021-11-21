@@ -2,12 +2,13 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'About us', href: '/about', current: false },
+  { name: 'Services', href: '#', current: false },
+  { name: 'Contact us', href: '/contact', current: false },
 ]
 
 function classNames(...classes: any) {
@@ -16,7 +17,7 @@ function classNames(...classes: any) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 absolute w-screen">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -33,6 +34,7 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                {/* Logo Image */}
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
@@ -45,20 +47,22 @@ export default function Example() {
                     alt="Workflow"
                   />
                 </div>
+                {/* Sections - Tablet + */}
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
                       >
-                        {item.name}
-                      </a>
+                        <a
+                          className={classNames(
+                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                            'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >{item.name}</a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -131,6 +135,7 @@ export default function Example() {
             </div>
           </div>
 
+          {/* Sections - Mobile */}
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (

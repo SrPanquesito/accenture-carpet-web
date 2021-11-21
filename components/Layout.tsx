@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Header from './Header'
+import HeaderSimple from './HeaderSimple'
 import Footer from './Footer'
 
 type Props = {
@@ -15,7 +16,7 @@ const Layout = ({ children, title = "Default title" }: Props) => (
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Header />
+        <HeaderSimple />
         {children}
         {/* <Footer /> */}
     </>
