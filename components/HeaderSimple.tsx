@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const navigation = [
     {title: 'Home', href: "#", activeStatus: true}
@@ -20,6 +21,9 @@ const HeaderSimple = () => (
             <li className="cursor-pointer">Contact</li>
             <button className="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase" type="button">Login</button>
         </ul>
+        <div className="flex sm:hidden flex-1 justify-end">
+            <FontAwesomeIcon icon="bars" className="w-6" />
+        </div>
     </nav>
 )
 
