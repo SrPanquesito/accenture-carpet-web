@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <section className="relative">
+        <section className="relative mb-20 lg:mb-60">
             <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
                 {/* Content */}
                 <div className="flex flex-1 flex-col items-center lg:items-start">
@@ -23,7 +23,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* Rounded rectangle */}
-            <div className="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-right-36"></div>
+            <div className="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
         </section>
     )
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const Features = () => (
-    <section className="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <section className="bg-bookmark-white py-20">
         {/* Heading */}
         <div className="sm:w-3/4 lg:w-3/6 mx-auto px-2">
             <h1 className="text-3xl text-center text-bookmark-blue font-medium">Features</h1>
@@ -14,7 +14,13 @@ const Features = () => (
             <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                 {/* Image */}
                 <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <Image src="/imgs/illustration-features-tab-1.png" width={536} height={346} />
+                    {/* <Image 
+                        src="/imgs/illustration-features-tab-1.png" 
+                        // layout="responsive"
+                        width={536} 
+                        height={346} 
+                    /> */}
+                    <img src="/imgs/illustration-features-tab-1.png" className="h-5/6 w-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" />
                 </div>
                 {/* Content */}
                 <div className="flex flex-1 flex-col items-center lg:items-start">
@@ -35,7 +41,8 @@ const Features = () => (
             <div className="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                 {/* Image */}
                 <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <Image src="/imgs/illustration-features-tab-2.png" width={478} height={393} />
+                    {/* <Image src="/imgs/illustration-features-tab-2.png" width={478} height={393} /> */}
+                    <img src="/imgs/illustration-features-tab-2.png" className="h-5/6 w-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" />
                 </div>
                 {/* Content */}
                 <div className="flex flex-1 flex-col items-center lg:items-start">
@@ -56,7 +63,8 @@ const Features = () => (
             <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                 {/* Image */}
                 <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <Image src="/imgs/illustration-features-tab-3.png" width={440} height={380} />
+                    {/* <Image src="/imgs/illustration-features-tab-3.png" width={440} height={380} /> */}
+                    <img src="/imgs/illustration-features-tab-3.png" className="h-5/6 w-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" />
                 </div>
                 {/* Content */}
                 <div className="flex flex-1 flex-col items-center lg:items-start">

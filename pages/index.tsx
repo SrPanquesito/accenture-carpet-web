@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
+import Download from '../components/sections/Download'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Layout title="Homepage">
         <Hero />
         <Features />
+        <Download />
       </Layout>
     </>
   )
