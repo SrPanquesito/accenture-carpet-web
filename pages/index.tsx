@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/Layout'
+import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
 
 const Home: NextPage = () => {
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout title="Homepage">
         <Hero />
+        <Features />
       </Layout>
     </>
   )
