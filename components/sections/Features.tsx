@@ -33,7 +33,7 @@ const Features = () => (
                     </button>
                 </div>
                 {/* Rounded rectangle */}
-                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-5/12 -bottom-24 left-0"></div>
             </div>
         </div>
         {/* Feature #2 */}
@@ -55,7 +55,7 @@ const Features = () => (
                     </button>
                 </div>
                 {/* Rounded rectangle */}
-                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36"></div>
+                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-5/12 -bottom-24 right-0"></div>
             </div>
         </div>
         {/* Feature #3 */}
@@ -77,7 +77,7 @@ const Features = () => (
                     </button>
                 </div>
                 {/* Rounded rectangle */}
-                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+                <div className="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-5/12 -bottom-24 left-0"></div>
             </div>
         </div>
     </section>
