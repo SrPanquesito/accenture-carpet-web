@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
 import Download from '../components/sections/Download'
+import FAQ from '../components/sections/FAQ'
+import ContactUs from '../components/sections/ContactUs'
 
 const Home: NextPage = () => {
   return (
@@ -15,10 +17,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <Layout title="Homepage">
+      <Layout title=":3">
         <Hero />
         <Features />
         <Download />
+        <FAQ />
+        <ContactUs />
       </Layout>
     </>
   )

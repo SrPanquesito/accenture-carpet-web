@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from './Header'
 import HeaderSimple from './HeaderSimple'
 import Footer from './Footer'
+import FooterSimple from './FooterSimple'
 
 type Props = {
     children?: ReactNode,
@@ -18,7 +19,7 @@ const Layout = ({ children, title = "Default title" }: Props) => (
         </Head>
         <HeaderSimple />
         {children}
-        {/* <Footer /> */}
+        <FooterSimple />
     </>
 )
 

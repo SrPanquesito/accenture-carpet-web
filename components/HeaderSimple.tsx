@@ -16,10 +16,10 @@ const HeaderSimple = () => (
             />
         </div>
         <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-            <li className="cursor-pointer">Features</li>
-            <li className="cursor-pointer">Pricing</li>
-            <li className="cursor-pointer">Contact</li>
-            <button className="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase" type="button">Login</button>
+            <li className="cursor-pointer hover:text-bookmark-purple hover:border-b hover:border-blue-500 hover:leading-loose transition duration-300">Features</li>
+            <li className="cursor-pointer hover:text-bookmark-purple hover:border-b hover:border-blue-500 hover:leading-loose transition duration-300">Pricing</li>
+            <li className="cursor-pointer hover:text-bookmark-purple hover:border-b hover:border-blue-500 hover:leading-loose transition duration-300">Contact</li>
+            <button className="btn bg-bookmark-red text-white hover:bg-bookmark-white hover:text-black uppercase" type="button">Login</button>
         </ul>
         <div className="flex sm:hidden flex-1 justify-end">
             <FontAwesomeIcon icon="bars" className="w-6" />
